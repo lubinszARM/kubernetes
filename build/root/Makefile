@@ -88,6 +88,7 @@ endef
 ifeq ($(PRINT_HELP),y)
 all:
 	@echo "$$ALL_HELP_INFO"
+	@echo "bblu..."
 else
 all: generated_files
 	hack/make-rules/build.sh $(WHAT)
